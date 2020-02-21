@@ -6,11 +6,11 @@ import { timer, Observable } from 'rxjs';
   providedIn: "root"
 })
 export class GetProductsService {
-  private allProudctsUrl = "http://localhost:3000/all-products";
-  private productDetailUrl = "http://localhost:3000/productId";
-  private saveProductUrl = "http://localhost:3000/addProduct";
-  private buyProductUrl = "http://localhost:3000/buyProducts";
-  private cardProductUrl = "http://localhost:3000/cardProducts"
+  private allProudctsUrl = "https://products-server-store.herokuapp.com/all-products";
+  private productDetailUrl = "https://products-server-store.herokuapp.com/productId";
+  private saveProductUrl = "https://products-server-store.herokuapp.com/addProduct";
+  private buyProductUrl = "https://products-server-store.herokuapp.com/buyProducts";
+  private cardProductUrl = "https://products-server-store.herokuapp.com/cardProducts"
   httpOptions = {
     headers: new HttpHeaders({
       "Content-Type": "application/json"
