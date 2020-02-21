@@ -1,0 +1,22 @@
+<div class="add-product">
+    <form class="ui form">
+        <div class="field">
+            <label>Product Name</label>
+            <input type="text" #name>
+        </div>
+        <div class="field">
+            <label>Product Price</label>
+            <input type="text" #price>
+        </div>
+        <div class="field">
+            <label>Text</label>
+            <textarea #description></textarea>
+        </div>
+        <div class="field">
+            <label>Product Image</label>
+            <input type="file" #imageSrc (change)="onChange(imageSrc)">
+        </div>
+        <button class="ui button" (click)="addNewProduct(name, price, description, imageSrc); false">Add new
+            product</button>
+    </form>
+</div>

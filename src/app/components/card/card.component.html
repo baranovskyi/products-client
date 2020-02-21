@@ -1,0 +1,18 @@
+<div class="ui grid container">
+    <div *ngFor="let product of products">
+        <div class="ui card four wide column">
+            <div class="ui slide masked reveal image">
+                <img src={{product.imageSrc}} alt={{product.name}} class=" content">
+            </div>
+            <div class="content">
+                <p class="header">Name: {{product.name}}</p>
+                <div class="meta">
+                    <span class="date">Price: {{product.price}} </span>
+                </div>
+                <div class="description">
+                    {{product.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

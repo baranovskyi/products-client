@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./app/vendor/semantic.min.css";
+body {
+  background-color: rgb(0, 217, 255);
+}
+.ui.menu .item img.logo {
+  margin-right: 1.5em;
+}
+
+form.ui.segment.form {
+  background-color: #f1f9ff;
+  margin-top: 2em;
+}
+
+form.form:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.votes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  padding: 1em 0;
+  border-radius: 5px;
+}
+
+.ui.grid.posts {
+  margin-top: 2em;
+}
+
+.meta {
+  color: #9a9a9a;
+}
+
+.ui.grid > .row > .column.votes {
+  display: flex;
+}
+
+ul.ui.list li:before {
+  content: "";
+}
+
+.voters {
+  clear: both;
+  width: 100%;
+}

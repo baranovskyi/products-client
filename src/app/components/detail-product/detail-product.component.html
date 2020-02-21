@@ -1,0 +1,17 @@
+<div class="ui grid container" *ngIf="products">
+    <div class="ui card four wide column">
+        <div class="ui slide masked reveal image">
+            <img src={{products.imageSrc}} alt={{products.name}} class=" content">
+        </div>
+        <div class="content">
+            <p class="header">Name: {{products.name}}</p>
+            <div class="meta">
+                <span class="date">Price: {{products.price}} </span>
+            </div>
+            <div class="description">
+                {{products.description}}
+            </div>
+        </div>
+        <button class="ui button" (click)="buyProduct(products)">Buy</button>
+    </div>
+</div>

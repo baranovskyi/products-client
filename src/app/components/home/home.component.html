@@ -1,0 +1,17 @@
+<div class="products-title">
+    <h1>All products</h1>
+</div>
+<div class="ui grid container">
+    <div class="ui card four wide column" *ngFor="let product of products">
+        <div class="ui slide masked reveal image">
+            <img src={{product.imageSrc}} alt={{product.name}} class=" content">
+        </div>
+        <div class="content">
+            <p class="header">Name: {{product.name}}</p>
+            <div class="meta">
+                <span class="date">Price: {{product.price}} </span>
+            </div>
+        </div>
+        <a class="ui button" [routerLink]="['/detail', product._id]">More detail</a>
+    </div>
+</div>
